@@ -54,12 +54,12 @@ export const About = () => {
 								and automation as my introduction to the industry was an experience that reshaped
 								my trajectory and sparked my passion for DevOps.
 							</p>
-							<p className="pb-2 text-lg max-w-lg animate-fade-in animation-delay-400">
+							<p className="pb-2 text-md max-w-lg animate-fade-in animation-delay-400">
 								As an ongoing hobby project, I am currently doing a deep dive into Kubernetes, 
 								exploring its architecture and automating deployments within my homelab to host 
 								and manage services.
 							</p>
-							<p className="text-lg max-w-lg animate-fade-in animation-delay-500">
+							<p className="text-md max-w-lg animate-fade-in animation-delay-500">
 								Other sidequests include bouldering, Pump-it-up, and playing the piano :) 
 							</p>
 						</div>
