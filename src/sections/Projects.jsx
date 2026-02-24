@@ -5,7 +5,7 @@ const projects = [
     title: "Kitchen-Sink",
     description:
       "My personal homelab project, a Kubernetes cluster running a variety of self-hosted applications and services",
-    image: "/public/sfuia.png",
+    image: "/project_kitchen.png",
     tags: ["Kubernetes", "Docker", "ArgoCD", "Helm", "Linux"],
     github: "https://github.com/calbertan/kitchen-sink",
   },
@@ -13,7 +13,7 @@ const projects = [
     title: "Anon-forum",
     description:
       "A website to share you innermost, unhinged tasked anonymously, or proudly owned",
-    image: "/public/project_anon.png",
+    image: "/project_anon.png",
     tags: ["Next.js", "Tailwind", "MongoDB"],
     link: "https://anon-forum.vercel.app",
     github: "https://github.com/calbertan/anon-forum",
@@ -22,7 +22,7 @@ const projects = [
     title: "Syscourse",
     description:
       "Educational resource platform hosted in GCP's Kubernetes Engine",
-    image: "/public/project_syscourse.png",
+    image: "/project_syscourse.png",
     tags: ["GCP", "Kubernetes", "Python", "Flask"],
     github: "https://github.com/calbertan/sys-course-content-sharing-platform",
   },
@@ -30,7 +30,7 @@ const projects = [
     title: "Cloud Hosted MERN Checklist",
     description:
       "A containerized full-stack MERN application with steps on how to deploy to Openshift",
-    image: "/public/project_openshift.png",
+    image: "/project_openshift.png",
     tags: ["Docker", "Openshift", "MongoDB", "Express.js", "React", "Node.js"],
     github: "https://github.com/calbertan/Checklist-Mern",
   },
@@ -38,7 +38,7 @@ const projects = [
     title: "CShell",
     description:
       "A CLI that mimics the Linux/UNIX command line that allows the storing of variables and listing of directories",
-    image: "/public/project_cshell.png",
+    image: "/project_cshell.png",
     tags: ["C", "Linux"],
     github: "https://github.com/calbertan/CShell",
   },
@@ -46,7 +46,7 @@ const projects = [
     title: "Weatherly",
     description:
       "A weather app complemented with a CI/CD pipeline using Github Actions",
-    image: "/public/project_weatherly.png",
+    image: "/project_weatherly.png",
     tags: ["C", "Linux"]
   },
 ];
@@ -57,12 +57,12 @@ export const Projects = () => {
 		<section id='projects' className="relative overflow-hidden">
 			<div className="container mx-auto px-6 relative z-10">
 				{/* Section Header */}
-				<h1 className="text-4xl md:text-5xl font-bold text-center mb-8 animate-fade-in text-primary">
+				<h1 className="text-3xl md:text-4xl font-bold text-center mb-8 animate-fade-in text-primary">
 					Projects
 				</h1>
 
         {/* Projects */}
-        <div className="mx-auto max-w-md gap-8">
+        <div className="mx-auto max-w-sm gap-8">
           {projects.map((project, idx) => (
             <div
               key={idx}

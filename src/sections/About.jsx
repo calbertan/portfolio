@@ -26,7 +26,7 @@ export const About = () => {
 	};
 
 	return (
-		<section className="mx-auto max-w-5xl relative min-h-screen flex items-center overflow-hidden">
+		<section className="mx-auto max-w-4xl relative min-h-screen flex items-center overflow-hidden">
 			<div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
 
 				<div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -43,12 +43,12 @@ export const About = () => {
 
 						{/* About */}
 						<div>
-							<h1 className="pb-2 text-3xl lg:text-4xl leading-tight animate-fade-in animation-delay-100">
+							<h1 className="pb-2 text-2xl lg:text-3xl leading-tight animate-fade-in animation-delay-100">
 								Hi! 
 								<br/>
 								I'm <span className="text-primary">Chris</span>topher Albert Tan
 							</h1>
-							<p className="pb-2 text-lg max-w-lg animate-fade-in animation-delay-300">
+							<p className="pb-2 text-md max-w-lg animate-fade-in animation-delay-300">
 								My journey started when I worked as a DevOps Specialist for the Cloud Services
 								branch of the BC Government. Getting hands-on with enterprise cloud platforms
 								and automation as my introduction to the industry was an experience that reshaped
