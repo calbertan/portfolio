@@ -1,3 +1,4 @@
+'use client'
 import { ArrowUpRight, Github } from "lucide-react";
 
 const projects = [
@@ -27,7 +28,7 @@ const projects = [
     github: "https://github.com/calbertan/sys-course-content-sharing-platform",
   },
   {
-    title: "Cloud Hosted MERN Checklist",
+    title: "MERN Checklist",
     description:
       "A containerized full-stack MERN application with steps on how to deploy to Openshift",
     image: "/project_openshift.png",
@@ -103,7 +104,7 @@ export const Projects = () => {
               {/* Content */}
               <div className="p-6 space-y-4">
                 <div className="flex items-start justify-between">
-                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="cursor-pointer text-xl font-semibold hover:text-primary transition-colors"
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="cursor-pointer text-xl font-semibold hover:text-primary-foreground group-hover:text-primary transition-colors"
                   >
                     {project.title}
                   </a>

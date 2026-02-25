@@ -1,3 +1,7 @@
+'use client';
+import { useState } from 'react';
+import { ChevronRight } from 'lucide-react';
+
 const experiences = [
   {
     period: "May 2024 - Dec 2024",
@@ -28,9 +32,6 @@ const experiences = [
     current: true,
   },
 ];
-
-import { useState } from 'react';
-import { ChevronRight } from 'lucide-react';
 
 export const Experience = () => {
 	const [expandedIdx, setExpandedIdx] = useState(null);

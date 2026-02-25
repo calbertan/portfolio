@@ -1,5 +1,6 @@
+'use client';
 
-import { Button } from '@/components/Button';
+import { Button } from '../components/Button';
 import { ArrowRight, Download, Github, Linkedin, Mail } from 'lucide-react';
 import { useState, useRef } from 'react';
 
@@ -66,9 +67,11 @@ export const About = () => {
 
 						{/* Buttons */}
 						<div className="animate-fade-in animation-delay-600">
-							<Button size='default'>
-								Resume <Download className="w-5 h-5"/>
-							</Button>
+							<a href="/Resume_Christopher_Tan.pdf" download>
+								<Button size='default'>
+									Resume <Download className="w-5 h-5"/>
+								</Button>
+							</a>
 						</div>
 
 						{/* Socials */}
@@ -108,7 +111,7 @@ export const About = () => {
 									{icon: Linkedin, href: 'https://www.linkedin.com/in/calbertan/', target:'_blank'},
 									{icon: Mail, href: 'mailto:christopher.albertan@gmail.com', target:''}
 								].map((social, index, target) => (
-									<a key={index} href={social.href} className='' target={social.target}>
+								<a key={index} href={social.href} className='text-foreground hover:text-primary hover:scale-125 transition-all duration-300' target={social.target}>
 										{<social.icon className='w-5 h-5 mt-2'/>}
 									</a>
 								))}

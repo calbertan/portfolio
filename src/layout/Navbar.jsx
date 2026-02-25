@@ -1,4 +1,6 @@
-import { Button } from '@/components/Button';
+'use client';
+
+import { Button } from '../components/Button';
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
@@ -30,7 +32,9 @@ export const Navbar = () => {
 
 
 				<div className="hidden md:block">
-					<Button size="sm">Get in touch</Button>
+					<a href="mailto:christopher.albertan@gmail.com">
+						<Button size="sm">Get in touch</Button>
+					</a>
 				</div>
 
 				{/* Mobile Nav */}
@@ -50,7 +54,9 @@ export const Navbar = () => {
 							</a>
 						))}
 
-						<Button size="sm">Get in touch</Button>
+						<a href="mailto:christopher.albertan@gmail.com">
+							<Button size="sm">Get in touch</Button>
+						</a>
 					</div>
 				</div>
 			)}
