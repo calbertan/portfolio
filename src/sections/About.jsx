@@ -120,7 +120,7 @@ export const About = () => {
 					{/* right column */}
 					<div className='relative animate-fade-in animation-delay-800'>
 						<div className='relative max-w-md mx-auto p-2'>
-								<img src='/granville.png' alt="Christopher Albert Tan" className='w-full aspect-[4/5] object-cover rounded-2xl glow-border'/>
+								<img src='/me.png' alt="Christopher Albert Tan" className='w-full aspect-[4/5] object-cover rounded-2xl glow-border'/>
 						</div>
 					</div>
 

@@ -62,7 +62,7 @@ export const Projects = () => {
 				</h1>
 
         {/* Projects */}
-        <div className="mx-auto max-w-sm gap-8">
+        <div className="grid md:grid-cols-2 gap-x-16 gap-y-8 mx-auto max-w-4xl">
           {projects.map((project, idx) => (
             <div
               key={idx}
@@ -103,15 +103,18 @@ export const Projects = () => {
               {/* Content */}
               <div className="p-6 space-y-4">
                 <div className="flex items-start justify-between">
-                  <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="cursor-pointer text-xl font-semibold hover:text-primary transition-colors"
+                  >
                     {project.title}
-                  </h3>
+                  </a>
                   {project.link && (
                     <ArrowUpRight
                       className="w-5 h-5 
-                    		text-muted-foreground group-hover:text-primary
-                        group-hover:translate-x-1 
-                        group-hover:-translate-y-1 transition-all"
+                    		text-muted-foreground hover:text-primary
+                        hover:translate-x-1 
+                        hover:-translate-y-1 transition-all
+                        cursor-pointer"
+                      onClick={() => window.open(project.link, '_blank')}
                     />
                   )}
                 </div>

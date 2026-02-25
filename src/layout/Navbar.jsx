@@ -10,10 +10,10 @@ const navLinks = [
 export const Navbar = () => {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 	return (
-		<header className="fixed top-0 left-0 right-0 bg-background py-3 z-50 border-b-1 border-muted">
+		<header className="fixed top-0 left-0 right-0 bg-background py-2 z-50 border-b-1 border-muted">
 			<nav className="container mx-auto px-6 flex items-center justify-between">
-				<a href='#' className="text-xl font-bold tracking-tight hover:text-primary">
-					CAT
+				<a href='#' className="hover:opacity-80 transition-opacity">
+					<img src="/favicon.png" alt="Logo" className="h-12 w-12" />
 				</a>
 
 
